@@ -1,0 +1,1573 @@
+*{
+  margin: 0;
+  padding:0;
+  font-size: 16px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100% 85% 50% 80% 85% 70% 32%;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "d"
+  "d1"
+  "d2"
+  "e";
+}
+
+#one{
+  grid-area: a;
+  background-image: url(../images/abackground.png);
+  background-size: cover;
+  background-repeat: round;
+}
+
+#one .header{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+#one .header .logo{
+  width: 13%;
+  margin-top: 1.7%;
+}
+
+#one .header .menu .menuBtn{
+  display:none;
+  width: 5rem;
+  color: white;
+}
+
+.menu ul li{
+  display:inline;
+  margin-left:1.7rem;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: .87rem;
+}
+
+.menu ul li a:hover{
+  color: #66ff00;
+}
+
+.text1{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -75%);
+  width: 80%;
+  text-align: center;
+}
+
+.text1 h1{
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding-bottom: .6rem;
+}
+
+.text1 h6{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-bottom: .6rem;
+}
+
+.text1 .btn{
+  position:absolute;
+  top: 100%;
+  left: 46%;
+  width: 12%;
+  min-width: 8rem;
+  color:#004455;
+  font-weight: bold;
+  padding: .6rem .3rem;
+  padding-bottom: .6rem;
+  border-radius: 15px 15px;
+  background: linear-gradient(to top right, #66FF00, #FFFF00);
+  cursor:pointer;
+}
+
+.text1 a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+.text1 a:hover{
+  color: #2a7fff;
+}
+
+#two{
+  grid-area: b;
+  padding: 20% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#two .name{
+  font-size: 3.3rem;
+  font-weight: bold;
+  padding-top: 15%;
+}
+
+.name span{
+  font-weight: bold;
+  font-size:3.3rem;
+  color: #66ff00;
+}
+
+.def{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:20%;
+  padding-right:15%;
+}
+
+#two .def img{
+  padding-bottom: 20%;
+  width: 30%;
+  flex-basis: 50%;
+}
+
+.def .text2{
+  margin-left: 10%;
+  flex-basis:50%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.text2 span{
+  color: #66ff00;
+  font-size: 1.3rem;
+}
+
+.text2 .btn1{
+  color:#004455;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  border-radius: 15px 15px;
+  background: linear-gradient(to top right, #66FF00, #FFFF00);
+  cursor:pointer;
+  width: 23%;
+  min-width: 4.6rem;
+  text-align: center;
+}
+
+.text2 a{
+  text-decoration: none;
+  color: black;
+}
+
+.text2 a:hover{
+  color: #2a7fff;
+}
+
+#three{
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  background: linear-gradient(to top right, #2a7fff, #00ffcc);
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+#three h1{
+  color: white;
+  font-size: 3.3rem;
+}
+
+#three .img3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#three .img3 .img3a{
+  padding: 1% 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 45%;
+  margin-left: 5%;
+}
+
+#three .img3 .img3b{
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 45%;
+  margin-right: 5%;
+}
+
+#three .img3 .img3a img{
+  width: 30%;
+}
+
+#three .img3 .img3b img{
+  width: 27.5%;
+}
+
+#three .img3 .img3b .graphic{
+  width: 37%;
+}
+
+/*    my services     */
+
+#four{
+  grid-area: d;
+  padding-top: 5%;
+}
+
+#four .myservices{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myservices ul{
+  padding: 0 9%;
+}
+
+.myservices h1{
+  font-size: 3rem;
+  padding-bottom: 2.2rem;
+  font-weight: bold;
+}
+
+.myservices h1 span{
+  color: #66ff00;
+  font-size: 3rem;
+}
+
+.myservices .services{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.myservices .services li{
+  list-style: none;
+  padding: 2%;
+  height: 48vh;
+  background: #d5fff6;
+  text-align: center;
+  width: 45%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 18rem;
+}
+
+.services li h3{
+  font-size: 1.5rem;
+  color: #004455;
+  padding-top: 5%;
+}
+
+.services li h5{
+  color: #0088aa;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.services li p{
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+#foura{
+  grid-area: d1;
+  text-align: center;
+  padding-top: 3%;
+  background: linear-gradient(to top right, #2a7fff, #00ffcc);
+}
+
+#foura h1{
+  font-size: 3.5rem;
+  color: white;
+}
+
+#foura span{
+  color: #66ff00;
+  font-size: 3.5rem;
+}
+
+.portfolio .rowa .window{
+  background: #006680;
+  width: 50%;
+  padding: 3.5% 0;
+  display: inline;
+}
+
+.portfolio .rowa .window img{
+  margin-top: 2%;
+  width: 24%;
+}
+
+.portfolio .rowa .window h5{
+  color: #66ff00;
+  font-size: .9rem;
+  margin-bottom: .2%;
+}
+
+.portfolio .rowa .window a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: .7rem;
+  padding: .1% .5%;
+  background: linear-gradient(to right, #66ff00, #f3ff00);
+  border-radius: 5px;
+}
+
+.portfolio .rowa .window a:hover{
+  color: #2a7fff;
+}
+
+  #fourb{
+    grid-area: d2;
+    text-align: center;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #fourb img{
+    margin-top: 7%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    width: 20%;
+  }
+
+  #fourb h1{
+    font-size: 3.5rem;
+    color: black;
+  }
+
+  #fourb span{
+    color: #66ff00;
+    font-size: 3.5rem;
+  }
+
+  #fourb .contact-box{
+    width: 500px;
+    margin-bottom: 5%;
+  }
+
+  #fourb .contact-box .yan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 2%;
+  }
+
+  .yan1{
+    text-align: left;
+  }
+
+  .input-field{
+    width: 240px;
+    height: 30px;
+    border: 1px solid #66ff00;
+  }
+
+  .aa{
+    margin-left: -2%;
+  }
+
+  .yan2{
+    text-align: left;
+  }
+
+  .mensahe{
+    text-align: left;
+    margin-top: 5%;
+  }
+
+  .mensahe input{
+    background: linear-gradient(to top right, #66ff00, #f3ff00);
+    border:0;
+    padding: .5% 3%;
+    border-radius: 10px;
+    margin-left: 42%;
+    font-weight: bold;
+    margin-top: 7%;
+    cursor: pointer;
+  }
+
+  .mensahe input:hover{
+    color: #2a7fff;
+  }
+
+  .mensahe1{
+    border: 1px solid #66ff00;
+  }
+
+
+
+#five {
+  grid-area: e;
+  text-align: center;
+  background: url(../images/footer.png);
+  background-size: cover;
+  background-repeat: round;
+}
+
+#five h3{
+  padding-top: 13%;
+  color: white;
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1367px){
+  .menu ul li a{
+    font-size: 1.4rem;
+  }
+
+  .text1 h1{
+    font-size: 4.4rem;
+  }
+
+  .text1 h6{
+    font-size: 2rem;
+  }
+
+  .text1 a{
+    font-size:1.5rem;
+  }
+
+  #two .name{
+    font-size: 4rem;
+  }
+
+  .name span{
+    font-size: 4rem;
+  }
+
+  .def .text2{
+    font-size: 1.6rem;
+  }
+
+  .text2 span{
+    font-size: 1.6rem;
+  }
+
+  .text2 a{
+    font-size: 1.4rem;
+  }
+
+  #three h1{
+    font-size: 4.4rem;
+  }
+
+  .myservices h1{
+    font-size: 4.4rem;
+  }
+
+  .myservices h1 span{
+    font-size: 4.4rem;
+  }
+
+  .services li h3{
+    font-size: 2.2rem;
+  }
+
+  .services li h5{
+    font-size: 1.6rem;
+  }
+
+  .services li p{
+    font-size: 1.6rem;
+  }
+
+  #foura h1, #foura span{
+    font-size: 4.5rem;
+    margin-top: 2%;
+  }
+
+  .portfolio .rowa .window{
+    padding-bottom: 4%;
+  }
+
+  .portfolio .rowa .window img{
+    margin-top: 4%;
+    width: 26%;
+  }
+
+  .portfolio .rowa .window h5{
+    font-size: 1.7rem;
+    margin-bottom: .5%;
+  }
+
+  .portfolio .rowa .window a{
+    font-size: 1.2rem;
+  }
+
+  #fourb img{
+    width: 23%;
+    margin-top: 12%;
+  }
+
+  #fourb h1, #fourb span{
+    font-size: 4.5rem;
+    margin-top: 4%;
+  }
+
+  #fourb .contact-box{
+    margin-top: 5%;
+    width:700px;
+  }
+
+  .input-field{
+    width: 340px;
+    height: 40px;
+    margin-bottom: -14%;
+  }
+
+  .mensahe input{
+    font-size: 1.5rem;
+    margin-top: 4%;
+  }
+
+  .mensahe1{
+    width: 100%;
+    height: 22vh;
+  }
+
+  form h4{
+    font-size: 1.3rem;
+  }
+
+  #five h3{
+    padding-top: 15%;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1280px){
+  .portfolio .rowa .window img{
+    margin-top: 6%;
+  }
+}
+
+@media only screen and (max-width: 1152px){
+  .portfolio .rowa .window img{
+    margin-top: 9%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 769px){
+
+  .container{
+    grid-template-rows: 90% 65% 70% 80% 85% 70% 33.33%;
+  }
+
+  #one{
+    background-image: url(../images/abackground.png);
+  }
+
+  #one .header .logo{
+    width: 13%;
+    margin-top: 6%;
+    margin-left: -1%;
+  }
+
+  .menu ul li a{
+    font-size: .8rem;
+  }
+
+  .text1 h1{
+    font-size: 2rem;
+  }
+
+  .text1 h6{
+    font-size: 1.1rem;
+  }
+
+  .text1 .btn{
+    min-width:8rem;
+    color:#004455;
+    font-size: .8rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    left: 43%;
+  }
+
+  #two .name{
+    font-size: 2.2rem;
+  }
+
+  .name span{
+    font-size: 2.2rem;
+  }
+
+  .def{
+    padding-left: 14%;
+  }
+  #two .def img{
+    width: 35%;
+  }
+  .def .text2{
+    font-size: 1rem;
+    min-width:22rem;
+  }
+
+  .text2 .span, .text2 .btn1{
+    font-size: .9rem;
+  }
+
+  #three{
+    padding: 5% 0;
+  }
+
+  #three h1{
+    font-size: 2.5rem;
+    /* padding-top: 3%; */
+  }
+
+  #three .img3{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 20%; */
+  }
+
+  #three .img3 .img3a{
+    padding:0 25%;
+    padding-bottom: 6%;
+  }
+
+  #three .img3 .img3b {
+    padding:0 25%;
+  }
+
+  #three .img3 .img3a, #three .img3 .img3b{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #three .img3 .img3a img{
+    width: 22%;
+  }
+
+  #three .img3 .img3b img{
+    width: 21.5%;
+  }
+
+  #three .img3 .img3b .graphic{
+    width: 28.5%;
+    margin-right: -4%;
+  }
+
+  #four .myservices h1{
+    font-size: 2rem;
+  }
+
+  #four .myservices h1 span{
+    font-size: 2rem;
+  }
+
+  .services li h3{
+    font-size: 1.2rem;
+  }
+
+  .services li h5{
+    font-size: .9rem;
+  }
+
+  .services li p{
+    font-size: .8rem;
+  }
+
+  #foura h1{
+    margin-top: 4%;
+  }
+
+  #foura h1, #foura span{
+    font-size: 2.8rem;
+  }
+
+  .portfolio .rowa .window{
+    padding-bottom: 4.5%;
+  }
+
+  .portfolio .rowa .window img{
+    margin-top: 2%;
+    width: 35%;
+  }
+
+  #fourb img{
+    margin-top: 10.5%;
+    width: 30%;
+  }
+
+  #fourb h1, #fourb span{
+    font-size: 2.4rem;
+  }
+
+  #fourb h1{
+    margin-top: 2.5%;
+  }
+
+  #fourb .contact-box{
+    margin-top: 5%;
+  }
+
+  .mensahe input{
+    margin-top: 4%;
+  }
+
+  #five h3{
+    padding-top: 18%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px){
+
+  .container{
+    grid-template-rows: 70% 60% 58% 50% 38% 40% 25%;
+  }
+
+  #one{
+    background-image: url(../images/abackgroundipad.png);
+  }
+
+  #one .header .logo{
+    width: 16%;
+    padding-top: .5%;
+  }
+
+  .menu ul li a{
+    font-size: .7rem;
+  }
+
+  .text1{
+    transform: translate(-50%, -160%);
+  }
+
+  .text1 h1{
+    font-size: 2rem;
+  }
+
+  .text1 h6{
+    font-size: 1rem;
+  }
+
+  .text1 .btn{
+    left: 40%;
+    font-size: .9rem;
+  }
+
+  #two{
+    padding-bottom: 10%;
+  }
+
+  #two .name{
+    font-size: 2.1rem;
+    padding-top: 7%;
+  }
+
+  #two .name span{
+    font-size: 2.1rem;
+  }
+
+  .def .text2{
+    font-size: .9rem;
+    min-width: 25rem;
+  }
+
+  .text2 span, .text2 .btn1{
+    font-size: .9rem;
+  }
+
+  .text2 .btn1{
+    width: 20%;
+    padding: .8rem 0;
+    border-radius: 40px 40px;
+  }
+
+  #three h1{
+    font-size: 2rem;
+    padding-top: 5%;
+  }
+
+
+  #three .img3{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3%;
+  }
+
+  #three .img3 .img3a{
+    padding:0 25%;
+    padding-bottom: 6%;
+  }
+
+  #three .img3 .img3b {
+    padding:0 25%;
+  }
+
+  #three .img3 .img3a, #three .img3 .img3b{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #three .img3 .img3a img{
+    width: 22%;
+  }
+
+  #three .img3 .img3b img{
+    width: 21.5%;
+  }
+
+  #three .img3 .img3b .graphic{
+    width: 28.5%;
+    margin-right: -4%;
+  }
+
+  #four .myservices h1{
+    font-size: 2rem;
+    margin-top:3%;
+  }
+
+  .myservices .services{
+    margin-top: 7%;
+  }
+
+  .myservices .services li{
+    height: 25vh;
+  }
+
+  #four .myservices h1 span{
+    font-size: 2rem;
+  }
+
+  .services li h3{
+    font-size: 1rem;
+  }
+
+  .services li h5{
+    font-size: .7rem;
+  }
+
+  .services li p{
+    font-size: .7rem;
+  }
+
+  #foura h1, #foura span{
+    font-size: 2.2rem;
+    margin-top: 3%;
+  }
+
+  .portfolio .rowa .window{
+    padding-bottom: 5.2%;
+  }
+
+  #fourb h1, #fourb span{
+    font-size: 2.2rem;
+    margin-top: 6%;
+  }
+
+  #fourb img{
+    width: 35%;
+    margin-top: 15%;
+  }
+
+  #five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .portfolio .rowa .window img{
+    margin-top: 7%;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 500px){
+
+  .container{
+    grid-template-rows: 60% 75% 60% 75% 78% 70% 30%;
+  }
+
+  #one{
+    background-image: url(../images/abackgroundipad.png);
+  }
+
+  #one .header .logo{
+    width: 15%;
+    padding-top: .5%;
+  }
+
+  .menu ul li a{
+    font-size: .55rem;
+  }
+
+  .text1{
+    transform: translate(-50%, -170%);
+  }
+
+  .text1 h1{
+    font-size: 1.5rem;
+  }
+
+  .text1 h6{
+    font-size: .7rem;
+  }
+
+  .text1 .btn{
+    padding: 1% 1%;
+    left: 42.8%;
+    min-width: 5rem;
+  }
+
+  .text1 a{
+    font-size: .6rem;
+  }
+
+  #two .name{
+    font-size: 2.1rem;
+    padding-top: 7%;
+  }
+
+  #two .name span{
+    font-size: 2.1rem;
+  }
+
+  .def{
+    flex-direction: column;
+    padding: 0 15%;
+  }
+
+  #two .def img{
+    width: 40%;
+    padding-bottom: 5%;
+  }
+
+  .def .text2{
+    text-align: center;
+    font-size: .9rem;
+    min-width:16.3rem;
+  }
+
+  .text2 span{
+    font-size: .9rem;
+  }
+
+  .text2 .btn1{
+    display: inline;
+    width: 20%;
+    padding: .4rem .6rem;
+    border-radius: 15px 15px;
+    font-size: .6rem;
+  }
+
+  .text2 a{
+    font-size: .8rem;
+  }
+
+  #three h1{
+    font-size: 2rem;
+    padding-top: 5%;
+  }
+
+
+  #three .img3{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3%;
+  }
+
+  #three .img3 .img3a{
+    padding:0 25%;
+    padding-bottom: 6%;
+  }
+
+  #three .img3 .img3b {
+    padding:0 25%;
+  }
+
+  #three .img3 .img3a, #three .img3 .img3b{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #three .img3 .img3a img{
+    width: 22%;
+  }
+
+  #three .img3 .img3b img{
+    width: 21.5%;
+  }
+
+  #three .img3 .img3b .graphic{
+    width: 28.5%;
+    margin-right: -4%;
+  }
+
+  #four .myservices h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .myservices .services{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60vh;
+  }
+
+  .myservices .services li{
+    height: 25vh;
+  }
+
+.myservices .services .hey{
+  margin-bottom: 10%;
+}
+
+
+  #four .myservices h1 span{
+    font-size: 2rem;
+  }
+
+  .services li h3{
+    font-size: 1rem;
+  }
+
+  .services li h5{
+    font-size: .7rem;
+  }
+
+  .services li p{
+    font-size: .7rem;
+  }
+
+  #foura h1, #foura span{
+    margin-top: 10%;
+    font-size: 2.8rem;
+  }
+
+  .portfolio .rowa .window{
+    padding-bottom: 6.5%;
+  }
+
+  .portfolio .rowa .window img{
+    margin-top: 2%;
+    width: 39%;
+  }
+
+  #fourb h1, #fourb span{
+    font-size: 2.4rem;
+  }
+
+  #fourb h1{
+    margin-top: 3%;
+  }
+
+  .yan2{
+    margin-left: 0%;
+  }
+
+  #fourb .contact-box{
+    margin-top: 5%;
+    width: 75%;
+  }
+
+  #fourb img{
+    margin-top:18%;
+    width: 38%
+  }
+
+  .input-field{
+    flex-basis: 50%;
+    width: 100%;
+  }
+
+  .mensahe .mensahe1{
+    width: 100%;
+  }
+
+  #five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #five h3{
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .portfolio .rowa .window img{
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 500px){
+  .container{
+    grid-template-rows: 100% 80% 87% 72.63% 55% 70% 16%;
+    }
+
+  #one {
+    background-image: url(../images/abackground360.png);
+    overflow-x: hidden;
+  }
+
+  #one .header .logo{
+    padding-top: 2%;
+    width: 20%;
+  }
+
+  #one .header .menu .menuBtn{/*ito importante sa js*/
+    padding: 0;
+    display: block;
+    width: 100px;
+    margin-right:-2.2rem;
+    cursor: pointer;
+  }
+
+  .menu ul{/*ito importante sa js*/
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    top: 75%;
+    right:-15%;
+    z-index: 1;
+    /* top:; */
+  }
+
+   #menuList{/*ito importante sa js*/
+    overflow: hidden;/*this piece of shit is mother fucking important!!!!*/
+    transition: .5s;
+  }
+
+  .menu ul li{/*ito importante sa js*/
+    display: block;
+    padding-top: 5%;
+  }
+
+
+
+  .text1{
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .text1 h1{
+    font-size: 2.2rem;
+  }
+  .text1 h6{
+    font-size:1rem;
+  }
+
+  .text1 .btn{
+    left: 43%;
+    min-width: 5rem;
+    font-size: .7rem;
+    border-radius: 15px 15px;
+    padding: 2% 1%;
+  }
+
+  .text1 a{
+    font-size: .6rem;
+  }
+
+  #two{
+    text-align: center;
+  }
+
+  #two .name{
+    font-size: 2.1rem;
+    padding-top: 7%;
+  }
+
+  #two .name span{
+    font-size: 2.1rem;
+  }
+
+  .def{
+    flex-direction: column;
+    padding: 0 2%;
+  }
+
+  #two .def img{
+    width: 40%;
+  }
+
+  .def .text2{
+    margin-top: 5%;
+    text-align: center;
+    font-size: .9rem;
+    min-width:16.3rem;
+  }
+
+  .text2 span, .text2 .btn1{
+    font-size: .9rem;
+  }
+
+  .text2 .btn1{
+    display: inline;
+    width: 20%;
+    padding: .3rem .4rem;
+    border-radius: 15px 15px;
+  }
+
+  #three h1{
+    font-size: 2rem;
+    padding-top: 3%;
+  }
+
+
+  #three .img3{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #three .img3 .img3a{
+    padding:0 25%;
+    /* padding-bottom: 6%; */
+    flex-direction: column;
+  }
+
+  #three .img3 .img3b {
+    padding:0 25%;
+    flex-direction: column;
+  }
+
+  #three .img3 .img3a, #three .img3 .img3b{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #three .img3 .img3a img{
+    width: 35%;
+    padding-bottom: 7%;
+  }
+
+  #three .img3 .img3b img{
+    width: 35%;
+    padding-bottom: 6%;
+  }
+
+  #three .img3 .img3b .graphic{
+    width: 45%;
+  }
+
+  #four{
+    text-align: center;
+  }
+
+  #four .myservices h1{
+    font-size: 2rem;
+  }
+
+  .myservices .services{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60vh;
+  }
+
+#four .myservices h1{
+  font-size: 2rem;
+}
+
+.myservices .services{
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 60vh;
+}
+
+.myservices .services li{
+  height: 25vh;
+  min-width: 18rem;
+  padding: 4% 5%;
+}
+
+#four .myservices h1 span{
+  font-size: 2rem;
+}
+
+.services li h3{
+  font-size: 1rem;
+}
+
+.services li h5{
+  font-size: .7rem;
+}
+
+.services li p{
+  font-size: .7rem;
+}
+
+.myservices .services .hey{
+  margin-bottom: 8%;
+}
+
+#foura h1, #foura span{
+  font-size: 2rem;
+}
+
+#foura h1{
+  margin-top: 5%;
+}
+
+.portfolio .rowa .window{
+  padding-bottom: 7.8%;
+}
+
+.portfolio .rowa .window img{
+  margin-top: 7%;
+  width: 41%;
+}
+
+#fourb h1, #fourb span{
+  margin-top: 10%;
+  font-size: 2.1rem;
+}
+
+#fourb img{
+  margin-top: 24%;
+  width: 58%;
+}
+
+#fourb .contact-box{
+  width: 75%;
+}
+
+#fourb .contact-box form{
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.input-field{
+  width: 154%;
+  margin-bottom: 5%;
+}
+
+.aa{
+  margin-left: 0;
+}
+
+.mensahe{
+  margin-top: 0;
+}
+
+.mensahe .mensahe1{
+  width: 90%;
+}
+
+#fourb .contact-box .yan{
+  flex-direction: column;
+  align-items: flex-start;;
+}
+
+#fourb .contact-box form h4{
+  font-size: .9rem;
+}
+
+.mensahe input{
+  font-size: .8rem;
+}
+
+#five h3{
+  padding-top: 16%;
+  font-size: .7rem;
+}
+}
+@media only screen and (max-width: 490px){
+  #three .img3 .img3b img, #three .img3 .img3a img{
+    width: 45%;
+  }
+
+  #three .img3 .img3b .graphic{
+    width: 58%;
+  }
+}
+@media only screen and (max-width: 420px){
+  .input-field{
+    width: 130%;
+  }
+}
+
+
+@media only screen and (max-width: 400px){
+  .container{
+    grid-template-rows: 100% 80% 87% 82% 55% 70% 21%;
+  }
+
+  #one .header .logo{
+    padding-top: 4%;
+    width: 23%;
+  }
+
+  .text1 h1{
+    font-size: 1.85rem;
+  }
+
+  .text1 .btn{
+    left: 37%;
+}
+  #two .name{
+    font-size: 1.85rem;
+    padding-top: 7%;
+  }
+
+  #two .name span{
+    font-size: 1.85rem;
+  }
+
+  #two .def img{
+    width: 60%;
+  }
+
+  .def .text2{
+    font-size: .8rem;
+    margin-top: -10%;
+  }
+
+  .text2 p{
+    margin-top: 25%;
+    margin-left:-10%;
+  }
+
+  .text2 .btn1{
+    font-size: .8rem;
+  }
+
+  .text2 a{
+    font-size: .7rem;
+  }
+
+  #three h1{
+    font-size: 2.4rem;
+    padding-top: 5%;
+  }
+
+  #three .img3{
+    margin-bottom: 10%;
+  }
+
+  #three .img3 .img3a img{
+    width: 47%;
+  }
+
+  #three .img3 .img3b img{
+    width: 47%;
+  }
+
+  #three .img3 .img3b .graphic{
+    width: 60%;
+  }
+
+  #four{
+    padding-top: 10%;
+  }
+
+  #four .myservices h1{
+    padding: 4 5%;
+    padding-bottom: 10%;
+    font-size: 2.2rem;
+  }
+
+  #four .myservices h1 span{
+    font-size: 2.2rem;
+  }
+
+  .portfolio .rowa .window{
+    padding-bottom: 10%;
+  }
+
+  .portfolio .rowa .window img{
+    margin-top: 15%;
+    width: 50%;
+  }
+
+  .portfolio .rowa .window h5{
+    font-size: .8rem;
+  }
+
+  .portfolio .rowa .window a{
+    font-size: .55rem;
+  }
+
+  #fourb img{
+    width: 80%;
+    margin-top: 49%;
+  }
+
+  #fourb .contact-box form{
+    margin-left: 5%;
+  }
+
+    .input-field{
+      width: 122%;
+    }
+
+    .mensahe .mensahe1{
+      width: 94.7%;
+    }
+
+    .mensahe input{
+      margin-top: 6%;
+      margin-left: 36%;
+      padding: .9% 3%;
+    }
+
+  #five{
+    padding-top: 18%;
+  }
+
+  #five h3{
+    font-size: .6rem;
+  }
+
+}
