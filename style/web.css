@@ -1432,6 +1432,139 @@
     width: 58%;
   }
 }
+
+@media only screen and (max-width: 450px){
+  .container{
+    grid-template-rows: 100% 80% 83% 77% 50% 50% 21%;
+  }
+
+  #one .header .logo{
+    padding-top: 4%;
+    width: 23%;
+  }
+
+  .text1 h1{
+    font-size: 1.85rem;
+  }
+
+  .text1 .btn{
+    left: 37%;
+}
+  #two .name{
+    font-size: 1.85rem;
+    padding-top: 7%;
+  }
+
+  #two .name span{
+    font-size: 1.85rem;
+  }
+
+  #two .def img{
+    width: 60%;
+  }
+
+  .def .text2{
+    font-size: .8rem;
+    margin-top: -10%;
+  }
+
+  .text2 p{
+    margin-top: 25%;
+    margin-left:-10%;
+  }
+
+  .text2 .btn1{
+    font-size: .8rem;
+  }
+
+  .text2 a{
+    font-size: .7rem;
+  }
+
+  #three h1{
+    font-size: 2.4rem;
+    padding-top: 5%;
+  }
+
+  #three .img3{
+    margin-bottom: 10%;
+  }
+
+  #three .img3 .img3a img{
+    width: 47%;
+  }
+
+  #three .img3 .img3b img{
+    width: 47%;
+  }
+
+  #three .img3 .img3b .graphic{
+    width: 60%;
+  }
+
+  #four{
+    padding-top: 10%;
+  }
+
+  #four .myservices h1{
+    padding: 4 5%;
+    padding-bottom: 10%;
+    font-size: 2.2rem;
+  }
+
+  #four .myservices h1 span{
+    font-size: 2.2rem;
+  }
+
+  .portfolio .rowa .window{
+    padding-bottom: 10%;
+  }
+
+  .portfolio .rowa .window img{
+    margin-top: 15%;
+    width: 50%;
+  }
+
+  .portfolio .rowa .window h5{
+    font-size: .8rem;
+  }
+
+  .portfolio .rowa .window a{
+    font-size: .55rem;
+  }
+
+  #fourb img{
+    width: 6%0;
+    margin-top: 32%;
+  }
+
+  #fourb .contact-box form{
+    margin-left: 5%;
+  }
+
+    .input-field{
+      width: 155%;
+    }
+
+    .mensahe .mensahe1{
+      width: 94.7%;
+    }
+
+    .mensahe input{
+      margin-top: 6%;
+      margin-left: 36%;
+      padding: .9% 3%;
+    }
+
+  #five{
+    padding-top: 18%;
+  }
+
+  #five h3{
+    font-size: .6rem;
+  }
+}
+
 @media only screen and (max-width: 420px){
   .input-field{
     width: 130%;
