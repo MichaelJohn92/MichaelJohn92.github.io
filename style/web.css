@@ -1541,6 +1541,9 @@
   #fourb .contact-box form{
     margin-left: 5%;
   }
+    #fourb .contact-box .yan{
+      width: 54%;
+    }
 
     .input-field{
       width: 155%;
