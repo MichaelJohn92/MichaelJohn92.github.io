@@ -1,0 +1,1131 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container{
+  height:100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100% 80% 33.67% 80% 22%;
+  grid-template-areas:
+  "a"
+  "b"
+  "c"
+  "e"
+  "f";
+}
+
+#row1{
+  background: url(../img20/aCircle.png);
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: round;
+  grid-area: a;
+}
+
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin: 0% 5% 0 5%;
+}
+
+#row1 .navbar .menu .menuBtn{
+  display: none;
+}
+
+.social-links{
+ position: absolute;
+ height: 5.5em;
+ width: 1.5em;
+ top: 18em;
+ left: 1.1em;
+ border-radius: 20px;
+ border: .3em #fff solid;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.social-links  i{
+ padding: 2.8px;
+ color: white;
+}
+
+#row1{
+  display: flex;
+  flex-direction: column;
+}
+
+#row1 .navbar .menu ul li{
+ display: inline;
+ margin: .5em;
+ font-size: 1.3rem;
+}
+
+#row1 .navbar .menu ul li a:hover{
+  color: magenta;
+}
+
+#row1 .navbar .menu ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#row1 .navbar img{
+  display: absolute;
+  width: 14%;
+  margin-right: 5%;
+}
+
+#row1 .content1{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+#row1 .content1 .atext{
+  position: relative;
+  flex-basis: 30%;
+  color: #fff;
+  padding-top: 10%;
+  padding-left: 10%;
+  text-transform: uppercase;
+}
+
+#row1 .content1 .atext h1{
+  font-size: 1.8rem;
+  min-width: 150%;
+}
+
+#row1 .content1 .atext button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 6.5em;
+  border: 0px;
+  padding: .5em;
+  border-radius: 10px;
+  background: linear-gradient(to right,#e3166b, #fabc08);
+}
+
+.atext button a{
+  text-decoration: none;
+}
+
+.atext button p{
+  color:black;
+}
+
+#row1 .content1 .pota{
+  position:relative;
+  display: flex;
+  flex-basis: 50%;
+  margin-top: 9%;
+}
+
+#row1 .content1 .pota img{
+  width: 85%;
+}
+
+#row2{
+  overflow: hidden;
+  grid-area: b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#row2 .asif .payments img{
+  top: -25%;
+  left: 15%;
+  position: absolute;
+  width: 80%;
+  z-index: -1;
+}
+
+#row2 .asif{
+  top: 5%;
+  padding-left: 10%;
+  flex-basis: 70%;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+#row2 .payments{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+  background: #FF5599;
+  border-radius: 15px;
+}
+
+.asif .p1, .p2{
+  font-size: 3.5em;
+  color: white;
+}
+
+.check{
+  display: flex;
+}
+
+.asif .check h4{
+  padding-right: 1em;
+}
+
+#row2 .asif1{
+  position: relative;
+  top: -6%;
+  right: -5%;
+  flex-basis: 100%;
+}
+
+#row2 .asif1 img{
+  width: 90%;
+}
+
+#row3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  grid-area: c;
+  background: pink;
+  background: url(../img20/c.png);
+  background-size: cover;
+  background-repeat: round;
+  color: #fff;
+}
+
+#row3 img{
+  width: 20%;
+  margin-left:12%;
+  margin-top: 1.7%;
+}
+
+#row3 .bili{
+  position: relative;
+  right: 15%;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bili h6{
+  padding: 2em;
+}
+
+.bili p{
+  font-weight: bold;
+  padding: .4em;
+  background: linear-gradient(to right,#e3166b, #fabc08);
+  width: 40%;
+  border-radius: 10px;
+}
+
+.bili p a{
+  text-decoration: none;
+  color: black;
+}
+
+#row5{
+  grid-area:e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+}
+
+#row5 .jese, #row5 .lisoo{
+  margin: 0 2.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+ #row5 .card{
+   background: linear-gradient(to bottom right,#ffd5e5, #ff5599);
+   height: 45.5vh;
+   width: 45%;
+   border-radius: 20px;
+   /* border: 5px solid #999999; */
+ }
+ .piktyur{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .jennie .piktyur img{
+   margin-top: 3%;
+   width: 75%;
+
+ }
+
+ .rose .piktyur img{
+   margin-top: 9%;
+   padding-bottom: 7%;
+   width: 56%;
+ }
+
+ .jisoo .piktyur img{
+   margin-top: 6%;
+   width: 65%;
+ }
+
+ .lisa .piktyur img{
+   padding-bottom: 5%;
+   margin-top: 13%;
+   width: 59%;
+ }
+
+ .detalye{
+   display: flex;
+   flex-direction: column;
+   flex-basis: 50%;
+   padding-left:5%;
+   padding-right:5%;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .detalye h3{
+   color: #800033;
+ }
+
+ .detalye p{
+   color: #fff;
+ }
+
+#row6{
+  background: url(../img20/f.png);
+  background-size: cover;
+  background-repeat: round;
+  grid-area: f;
+  text-align: center;
+}
+
+#row6 h3{
+ color: white;
+ margin-top: 8%;
+ z-index: 2;
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px ){
+
+  .container{
+    grid-template-rows: 60% 60% 30% 70% 20%;
+  }
+
+  .social-links{
+    top: 9em;
+  }
+
+  #row1 .navbar .menu ul{
+    padding-top: 5%;
+  }
+
+  #row1 .navbar .menu ul li{
+    font-size: .9rem;
+  }
+
+  #row1 .navbar img{
+    width: 12%;
+    margin-right: 3%;
+  }
+
+  #row1 .content1 .atext h1{
+    font-size: 1.3rem;
+  }
+
+  #row1 .content1 .atext{
+    padding-top: 6%;
+  }
+
+  #row1 .content1 .atext p{
+    font-size: .7rem;
+  }
+
+  #row1 .content1 .atext button{
+    background: linear-gradient(to right,#e3166b, #fabc08);
+  }
+
+  #row1 .content1 .pota{
+    margin-top: 3%;
+}
+
+  #row2 .asif{
+    margin-top: 0%;
+  }
+
+  .asif h1{
+    font-size: 1rem;
+  }
+
+  .asif .payments{
+    width: 75%;
+    padding: 4% 4%;
+    height: 15vh;
+  }
+
+  .asif .p1, .p2{
+    font-size:3rem;
+  }
+
+  .asif h4{
+    font-size: .8rem;
+  }
+
+  #row2 .asif .payments img{
+    top: -5%;
+    width: 85%;
+    height: 30vh;
+  }
+
+
+/*            row3               */
+  .bili{
+    padding-top: 3%;
+  }
+
+  .bili h2{
+    font-size: 1.2rem;
+  }
+
+  .bili h6{
+    font-size: .65rem;
+    min-width: 120%;
+  }
+
+  .bili p{
+    padding: .5em;
+    font-size: .7rem;
+  }
+
+  #row5{
+    flex-direction: column;
+    padding: 0 10%;
+    padding-top:2%;
+  }
+
+  #row5 .jese, .row5 .lisoo{
+    margin: 0 0;
+  }
+
+  #row5 .lisoo{
+    padding-top: 2%;
+  }
+
+  #row5 .card{
+    height: 30vh;
+    width: 48%;
+    padding-bottom: 2%;
+  }
+
+  .jennie .piktyur img{
+    width: 30%;
+  }
+
+  .rose .piktyur img{
+    margin-top: 5%;
+    padding-bottom: 3%;
+    width: 22.5%;
+  }
+
+  .jisoo .piktyur img{
+    width: 24%;
+  }
+
+  .lisa .piktyur img{
+    margin-top: 6%;
+    width: 23%;
+    padding-bottom: 2%;
+  }
+
+  .detalye h3{
+    font-size: 1rem;
+  }
+
+  .detalye p{
+    padding-top: 5%;
+    font-size: .9rem;
+  }
+
+  #row6 h3{
+    margin-top: 9%;
+  }
+
+}
+
+
+  @media only screen and (max-width: 767px) and (min-width: 501px){
+    .container{
+      grid-template-rows: 60% 60% 30% 70% 20%;
+    }
+
+    .social-links{
+      top: 9em;
+    }
+
+    #row1 .navbar .menu ul{
+      padding-top: 7%;
+    }
+
+    #row1 .navbar .menu ul li{
+      font-size: .9rem;
+    }
+
+    #row1 .navbar img{
+      width: 18%;
+    }
+
+    #row1 .content1 .atext{
+      padding-top: 15%;
+      margin-left: 5%;
+      min-width: 40%;
+    }
+
+    #row1 .content1 .atext h1{
+      font-size: 1rem;
+      min-width: 155%;
+    }
+
+    #row1 .content1 .atext p{
+      font-size: .7rem;
+    }
+
+    #row1 .content1 .atext button p{
+      text-align: center;
+      font-size: .8rem;
+    }
+
+    #row2 .asif{
+      margin-top: 0%;
+    }
+
+    .asif h1{
+      font-size: .7rem;
+    }
+
+    .asif .payments{
+      width: 50%;
+      padding: 8% 4%;
+      height: 15vh;
+    }
+
+    .asif .p1, .p2{
+      font-size: 1.7rem;
+    }
+
+    .asif h4{
+      font-size: .6rem;
+    }
+
+    #row2 .asif .payments img{
+      top: -15%;
+      width: 75%;
+      height: 25vh;
+    }
+
+    .asif span i{
+      font-size: .7rem;
+    }
+
+    .bili{
+      padding-top: 3%;
+    }
+
+    .bili h2{
+      font-size: 1.1rem;
+      min-width: 150%;
+    }
+
+    .bili h6{
+      font-size: .55rem;
+      min-width: 120%;
+    }
+
+    .bili p{
+      padding: .5em;
+      font-size: .6rem;
+      min-width: 60%;
+    }
+
+    #row5{
+      flex-direction: column;
+      padding: 0 10%;
+      padding-top:6%;
+    }
+
+    #row5 .jese, #row5 .lisoo{
+      margin: 0 0;
+    }
+
+    #row5 .lisoo{
+      padding-top: 2%;
+    }
+
+    #row5 .card{
+      height: 30vh;
+      width: 48%;
+      padding-bottom: 2%;
+    }
+
+    .jennie .piktyur img{
+      width: 30%;
+    }
+
+    .rose .piktyur img{
+      margin-top: 5%;
+      padding-bottom: 3%;
+      width: 22.5%;
+    }
+
+    .jisoo .piktyur img{
+      width: 24%;
+    }
+
+    .lisa .piktyur img{
+      margin-top: 6%;
+      width: 23%;
+      padding-bottom: 2%;
+    }
+
+    .detalye h3{
+      font-size: 1rem;
+    }
+
+    .detalye p{
+      padding-top: 5%;
+      font-size: .9rem;
+    }
+
+    #row6 h3{
+      font-size: 1rem;
+      margin-top: 13%;
+    }
+
+  }
+
+  @media only screen and (max-width: 500px){
+    .container{
+      grid-template-rows: 100% 100% 55% 100% 20%;
+    }
+
+    #row1{
+      background: url(../img20/aCircle500.png);
+      background-size: cover;
+      background-repeat: round;
+
+    }
+
+    .social-links{
+      top: 75%;
+      left: 85%;
+    }
+
+    #row1 .navbar img{
+      width: 21%;
+    }
+
+/* remember js */
+    #row1 .navbar .menu .menuBtn{
+      display: block;
+      width: 9%;
+      margin-left: 5%;
+      margin-top: 10%;
+      cursor: pointer;
+    }
+
+/* remember js */
+    #row1 .navbar .menu ul{
+      position: absolute;
+      width: 12%;
+      top: 12%;
+      z-index: 1;
+      /* background: linear-gradient(to top right,black, #ff0066); */
+      background: #ff80b2;
+      border-radius: 5px;
+    }
+
+/* remember js */
+    #menuList{
+      overflow: hidden;
+      transition: .5s;
+      /* height: 30vh; */
+    }
+
+/* remember js */
+    #row1 .navbar .menu ul li{
+      display: block;
+      font-size: .9rem;
+    }
+
+    #row1 .content1{
+      flex-direction: column;
+    }
+
+    #row1 .content1 .atext{
+      padding-top: 25%;
+      text-align: center;
+      min-width: 10%;
+      margin-left: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    #row1 .content1 .atext h1{
+      font-size: 1.5rem;
+      min-width: 30%;
+    }
+
+    #row1 .content1 .atext p{
+      font-size: .75rem;
+    }
+
+    #row1 .content1 .atext button{
+      position: relative;
+      top: 5%;
+      left: 40%;
+    }
+
+    #row1 .content1 .pota{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #row1 .content1 .pota img{
+      width: 70%;
+    }
+
+    #row2{
+      flex-direction: column;
+      padding-right: 25%;
+      display: inline;
+    }
+
+
+    #row2 .asif{
+      margin-top: 10%;
+      flex-basis: 85%;
+      padding: 0 5%;
+      margin-right: 7%;
+      text-align: center;
+    }
+
+    .asif h1{
+      font-size: .9rem;
+    }
+
+    .asif .payments{
+      width: 65%;
+      padding: 8% 4%;
+      margin-left: 35%;
+      height: 18vh;
+    }
+
+    .asif .p1, .p2{
+      font-size: 3rem;
+    }
+
+    .asif h4{
+      font-size: .7rem;
+    }
+
+    .asif h1, .asif h4{
+      margin-left: 25%;
+    }
+
+    #row2 .asif .payments img{
+      top: -15%;
+      width: 85%;
+      height: 28vh;
+      /* margin-right: 15%; */
+    }
+
+    .asif span i{
+      font-size: .5rem;
+    }
+
+    #row2 .asif1{
+      padding-top: 15%;
+    }
+
+    #row2 .asif1 img{
+      padding-left: 20%;
+    }
+
+    #row3{
+      background:url(../img20/cbula.png);
+      background-size: cover;
+      background-repeat: round;
+      flex-direction: column;
+      padding: 5% 5%;
+    }
+
+    #row3 img{
+      width: 55%;
+    }
+
+    #row3 .bili{
+      right: 0;
+    }
+
+    .bili h2{
+      font-size: 1.3rem;
+    }
+
+    .bili h6{
+      font-size: .7rem;
+    }
+
+    .bili p{
+      font-size: .7rem;
+      width: 25%;
+    }
+
+    #row5{
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 25%;
+      padding-top:6%;
+
+    }
+
+    #row5 .jese, #row5 .lisoo{
+      margin: 0 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #row5 .lisoo{
+      padding-top: 2%;
+    }
+
+    #row5 .card{
+      height: 22vh;
+      width: 72%;
+      padding-bottom: 2%;
+    }
+
+    .jennie .piktyur img{
+      width: 30%;
+    }
+
+    .rose .piktyur img{
+      margin-top: 5%;
+      padding-bottom: 3%;
+      width: 22.5%;
+    }
+
+    .jisoo .piktyur img{
+      width: 24%;
+    }
+
+    .lisa .piktyur img{
+      margin-top: 6%;
+      width: 23%;
+      padding-bottom: 2%;
+    }
+
+    .detalye h3{
+      font-size: .8rem;
+    }
+
+    .detalye p{
+      padding-top: 5%;
+      font-size: .7rem;
+    }
+
+    #row6 h3{
+      font-size: .7rem;
+      margin-top: 20%;
+    }
+
+  }
+
+  @media only screen and (max-width: 450px){
+    .container{
+      grid-template-rows: 100% 85% 55% 100% 20%;
+    }
+
+    .social-links{
+      top: 80%;
+    }
+
+    #row1 .navbar img{
+      width: 35%;
+      margin-top: 2%;
+    }
+
+    #row1 .content1{
+      margin-top:10%;
+    }
+
+    #row1 .navbar .menu .menuBtn{
+      width: 15%;
+    }
+
+    #row1 .navbar .menu ul li{
+      font-size: .9rem;
+    }
+
+    #row1 .content1 .atext{
+      padding-top: 48%;
+    }
+
+    #row1 .content1 .atext h1{
+      font-size: 1.8rem;
+    }
+
+    #row1 .content1 .atext p{
+      font-size: 1rem;
+    }
+
+    #row2 .asif{
+      margin-top: 20%;
+      margin-right: 28%;
+      padding: 0 0;
+    }
+
+    .asif .payments{
+      width: 72%;
+      height: 12vh;
+    }
+
+    .asif .p1, .p2{
+      font-size: 2.65rem;
+    }
+
+    .asif h1{
+      min-width: 120%;
+      font-size: 1.1rem;
+    }
+
+    .asif span h4{
+      font-size: .9rem;
+    }
+
+    .asif span i{
+      font-size: 1rem;
+    }
+
+      #row2 .asif .payments img{
+        width: 130%;
+        height: 26vh;
+      }
+
+    #row2 .asif1{
+      padding-top: 36%;
+    }
+
+    #row2 .asif1 img{
+      width: 120%;
+      padding-left: 2%;
+    }
+
+    .asif h4{
+      font-size: .8rem;
+      min-width: 90%;
+    }
+
+    #row3 img{
+      margin-top: 10%;
+      width: 80%;
+    }
+
+    .bili h2{
+      font-size: 1.9rem;
+    }
+
+    .bili h6{
+      font-size: .9rem;
+    }
+
+    .bili p{
+      min-width: 33%;
+      font-size: 1rem;
+    }
+
+    #row5{
+      padding-top: 15%;
+    }
+
+    #row5 .card{
+      padding-bottom: 0%;
+    }
+
+    .jennie .piktyur img{
+      margin-top: 7%;
+      width: 50%;
+    }
+
+    .rose .piktyur img{
+      margin-top: 11%;
+      padding-bottom: 3%;
+      width: 36.5%;
+    }
+
+    .jisoo .piktyur img{
+      margin-top: 11%;
+      width: 38%;
+    }
+
+    .lisa .piktyur img{
+      margin-top: 14%;
+      width: 35%;
+      padding-bottom: 2%;
+    }
+
+    #row5 .lisoo{
+      margin-top: 2.5%;
+    }
+
+    .detalye h3{
+      font-size: 1rem;
+    }
+
+    .detalye p{
+      font-size: .8rem;
+    }
+
+    #row6 h3{
+      margin-top: 30%;
+      font-size: 1rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 415px){
+
+    .container{
+      grid-template-rows: 100% 90% 55% 100% 20%;
+    }
+
+    .social-links{
+      top: 80%;
+    }
+
+    #row1 .navbar img{
+      width: 37%;
+      margin-top: 2%;
+    }
+
+    #row1 .navbar .menu .menuBtn{
+      width: 15%;
+    }
+
+    #row1 .navbar .menu ul li{
+      font-size: .8rem;
+    }
+
+    #row1 .content1 .atext{
+      padding-top: 48%;
+    }
+
+    #row1 .content1 .atext h1{
+      font-size: 1.45rem;
+    }
+
+    #row2 .asif{
+      margin-top: 20%;
+      margin-right: 28%;
+      padding: 0 0;
+    }
+
+    .asif .payments{
+      width: 72%;
+      height: 12vh;
+    }
+
+    .asif .p1, .p2{
+      font-size: 2.2rem;
+    }
+
+    .asif h1{
+      min-width: 120%;
+    }
+
+      #row2 .asif .payments img{
+        width: 130%;
+        height: 26vh;
+      }
+
+    #row2 .asif1{
+      padding-top: 36%;
+    }
+
+    #row2 .asif1 img{
+      width: 120%;
+      padding-left: 4%;
+    }
+
+    .asif h4{
+      font-size: .8rem;
+      min-width: 90%;
+    }
+
+    #row3 img{
+      margin-top: 10%;
+      width: 80%;
+    }
+
+    .bili p{
+      min-width: 33%;
+    }
+
+    #row5{
+      padding-top: 15%;
+    }
+
+    #row5 .card{
+      padding-bottom: 0%;
+    }
+
+    .jennie .piktyur img{
+      margin-top: 13%;
+      width: 30%;
+    }
+
+    .rose .piktyur img{
+      margin-top: 13%;
+      padding-bottom: 3%;
+      width: 22.5%;
+    }
+
+    .jisoo .piktyur img{
+      margin-top: 13%;
+      width: 24%;
+    }
+
+    .lisa .piktyur img{
+      margin-top: 14%;
+      width: 23%;
+      padding-bottom: 2%;
+    }
+
+    #row5 .lisoo{
+      margin-top: 2.5%;
+    }
+
+    #row6 h3{
+      margin-top: 30%;
+    }
+
+  }
