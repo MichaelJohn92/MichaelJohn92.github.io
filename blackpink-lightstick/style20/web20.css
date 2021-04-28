@@ -325,6 +325,86 @@
  z-index: 2;
 }
 
+@media only screen and (min-width: 1367px){
+
+  #row1 .navbar img{
+    width: 16%;
+    margin-right: 0;
+  }
+  .social-links{
+    height: 9.2em;
+    width: 2.5em;
+    top: 25em;
+    left: 1.5em;
+    border: .4em #fff solid;
+    border-radius: 30px;
+  }
+
+  .social-links i{
+    font-size: 1.8rem;
+    padding: 3.5px;
+  }
+
+  #row1 .navbar .menu ul li{
+   font-size: 1.8rem;
+  }
+
+  #row1 .content1 .atext{
+    margin-top: 3%;
+  }
+
+  #row1 .content1 .atext h1{
+    font-size: 2.4rem;
+  }
+
+  #row1 .content1 .atext p{
+    font-size: 1.3rem;
+  }
+
+  #row1 .content1 .atext button{
+    width: 10em;
+  }
+
+  #row2 .payments{
+    padding: 4.2em 1em;
+  }
+
+  .asif .p1, .p2{
+    font-size: 6.5rem;
+  }
+
+  .bili h2{
+    font-size: 2.8rem;
+  }
+
+  .bili h6{
+    font-size: 1.2rem;
+  }
+
+  .bili p{
+    font-size: 1.2rem;
+  }
+
+  .rose .piktyur img{
+    margin-top: 12%;
+    width: 54%;
+  }
+
+  .detalye h3{
+    font-size: 1.8rem;
+  }
+
+  .detalye p{
+    margin-top: 5%;
+    font-size: 1.4rem;
+  }
+
+  #row6 h3{
+    font-size: 1.5rem;
+  }
+
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px ){
 
   .container{
@@ -1143,9 +1223,9 @@
     }
 
     .rose .piktyur img{
-      margin-top: 5%;
+      margin-top: 7%;
       padding-bottom: 3%;
-      width: 28.5%;
+      width: 26.5%;
     }
 
     .jisoo .piktyur img{
@@ -1195,6 +1275,6 @@
   }
 
   .detalye p{
-    font-size: .68rem;
+    font-size: .6rem;
   }
 }
