@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    /* overflow: hidden; */
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+body{
+    /* min-height: 100vh; */
+    overflow-x: hidden;
+    /* background: linear-gradient(to bottom, #ff8500, #e42d04); */
+    background: #ff8500;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container #oneSec{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom:-8%;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,transparent, #ff8500, transparent );
+    z-index: 4;
+}
+
+.container #oneSec .navbar{
+    /* position: absolute;
+    top:0;
+    left:0;
+    width: 100%; */
+
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container #oneSec .navbar h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.menuList li{
+    display: inline;
+    margin: 1.2rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.menuList li a{
+    border-radius: 20px;
+    padding: 3px 4px;
+}
+
+.menuList li a:hover, .menuList li .active{
+    color: #fff;
+    background-color: orangered;
+}
+
+.menuBtn{
+    font-size: 1.8rem;
+    display: none !important;
+}
+
+.row2 .text{
+    width: 50%;
+    position: absolute;
+    top: -50%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    animation: drop 1s .5s; 
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode:forwards;
+}
+
+.row2 .text img{
+    width: 65%;
+}
+
+.row2 .text a{
+    border-radius: 20px;
+    width: 16rem;
+    margin-top: 2rem;
+    margin-left: 18%;
+    color: #fff;
+    background: linear-gradient(to right, #fdd200, #e33109);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: .8rem 1.2rem;
+}
+
+.row2 .text a:hover{
+    color: yellow;
+    letter-spacing: .02rem;
+    transition: .5s;
+}
+
+.imageBox img:nth-child(1){
+    width: 35%;
+    position: absolute;
+    right: -50%;
+    bottom: 0;
+    z-index: 2;
+
+    animation: slide 1s .5s forwards;
+}
+
+.imageBox img:nth-child(2){
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    z-index: 1;
+    transform: scale(0);
+
+    animation: grow 2s 1s infinite;
+}
+
+.sec{
+    padding-top: 120px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-image: url(./images/kyubiCloak.png); */
+    /* background-position: center;
+    background-size: 20%; */
+    background: linear-gradient(to bottom, #ff8500, #e42d04);
+}
+
+.sec h2{
+    font-size: 3.5rem;
+    margin-bottom: 47px;
+    color: #fff;
+}
+
+.sec img{
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+    mix-blend-mode: overlay;
+    opacity: .3;
+}
+
+.sec p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+@keyframes grow {
+    0%{transform: scale(0); opacity: 1;}
+    80%{opacity: 1;}
+    100%{transform: scale(1); opacity: .1;}
+} 
+
+@keyframes drop{
+    0%{top: -50%;}
+    100%{top:40%;}
+}
+
+@keyframes slide {
+    0%{right:-50%;}
+    100%{right: 5%;}
+}
+
+
+
+
+
+
+
+@media (max-width: 991px){
+    html{
+        font-size: 90%;
+    }
+
+    .container #oneSec .navbar{
+        padding: 20px 30px;
+    }
+
+    .imageBox img:nth-child(1){
+        width: 45%;
+    }
+
+    .imageBox img:nth-child(2){
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .row2 .text{
+        width: 70%;
+        /* top: 50%;
+        left: 50%; */
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .menuList{
+        /* text-align: center; */
+        position: absolute;
+        top: 8%;
+        right: -50%;
+        /* right: -100%; */
+        background: #ff8500;
+        height: 92vh;
+        z-index: 2;
+        width: 11rem;
+        transition:.5s;
+        z-index: 1;
+    }
+
+    .menuList.active{
+        right:0;
+    }
+
+    .menuList li{
+        display: block;
+    }
+
+    .menuList li a{
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .menuList li a:hover, .menuList li .active{
+        color:#fff;
+        background-color:transparent;
+        border-radius: 0;
+    }
+
+    .menuList li:hover{
+        border-bottom: .5px solid #fff;
+    }
+
+    /* .menuList li a:hover{
+        border-bottom: 2px solid #000;
+    } */
+
+    .menuBtn{
+     display: block !important;  
+     font-size: 2.5rem; 
+    }
+
+    .sec img{
+        /* top:0; */
+        object-fit:fill !important;
+        height: 100vh;
+        /* width: 200%; */
+
+    }
+}
+
+
+
+@media (max-width: 520px){
+    .row2 .text{
+        width: 80%;
+        /* top: 50%;  */
+        left: 50%;
+        transform: translate(-30%, -50%);
+        z-index: 3;
+    }
+
+    .row2 .text a{
+        width: 12rem;
+        text-align: center;
+        margin-left: 15%;
+        font-size: 1.4rem;
+    }
+
+    .imageBox img:nth-child(1){
+        width: 50%;
+    }
+
+    .imageBox img:nth-child(2){
+        width: 55%;
+    }
+
+}
+
+@media (max-width: 400px){
+
+    .row2 .text{
+        width: 100%;
+    }
+
+    .row2 .text a{
+        margin-left: 15%;
+    }
+
+    .imageBox img:nth-child(1){
+        width: 70%;
+    }
+
+    .imageBox img:nth-child(2){
+        width: 75%;
+    }
+}
