@@ -20,6 +20,7 @@ body{
     /* overflow: hidden; */
     /* background: linear-gradient(to bottom, #ff8500, #e42d04); */
     /* background: #ff8500; */
+    position: relative !important;
 }
 
 .container{
@@ -211,6 +212,11 @@ section::before{
         padding: 20px 30px;
     }
 
+    .container #oneSec .navbar h3{
+        font-size: 2rem;
+        /* font-weight: 800; */
+    }
+
     .imageBox img:nth-child(1){
         width: 45%;
     }
@@ -280,7 +286,7 @@ section::before{
 
     .menuBtn{
      display: block !important;  
-     font-size: 2.5rem; 
+     font-size: 2rem; 
     }
 
     .sec img{
@@ -292,6 +298,10 @@ section::before{
 
 
 @media (max-width: 520px){
+
+    .container #oneSec .navbar h3{
+        font-size: 1.7rem;
+    }
     /* .row2{
         display: grid;
         place-items: center;
@@ -304,14 +314,14 @@ section::before{
     }
 
     .row2 .text  img{
-        width: 180%;
+        width: 140%;
     }
 
     .row2 .text a{
-        width: 12rem;
+        width: 9.5rem;
         text-align: center;
         /* margin-left: 15%; */
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .imageBox img:nth-child(1){
@@ -325,12 +335,25 @@ section::before{
 }
 
 @media (max-width: 450px){
+
+    .container #oneSec .navbar h3{
+        font-size:2rem;
+    }
+
     .imageBox img:nth-child(1){
         width: 80%;
     }
 
     .imageBox img:nth-child(2){
         width: 95%;
+    }
+    .row2 .text  img{
+        width: 170%;
+    }
+
+    .row2 .text a{
+        width: 9.5rem;
+        font-size: 1.2rem;
     }
 }
 
