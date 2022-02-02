@@ -1,0 +1,292 @@
+*{
+  margin:0;
+  padding: 0;
+  /* font-size: 16px; */
+  font-family: sans-serif;
+  /* box-sizing: border-box; */
+  /* scroll-behavior: smooth; */
+  overflow-x: hidden;
+}
+
+html{
+  overflow: hidden;
+}
+
+body{
+  overflow: hidden;
+  position: relative;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* overflow-x: hidden !important; */
+}
+
+#oneSec{
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/background2.jpg);
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-repeat: round;
+
+  /* overflow-x: hidden !important; */
+}
+
+#oneSec .navbar{
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0% 5% 0% 5%;
+  padding-top: 2%;
+  /* margin: 3% 3% 0% 3%; */
+  /* top right bottom left */
+}
+
+.navbar h3{
+  font-size: 2rem;
+}
+
+.menulist{
+  /* max-height: 140px; */
+  height: 30%;
+  z-index: 3;
+}
+
+.menulist li{
+  display: inline;
+  margin:2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+ .menu .menulist li a{
+  font-weight: bold;
+  color: black;
+  /* font-size: 1.3rem; */
+  text-decoration: none;
+  /* cursor: pointer; */
+  cursor: pointer;
+}
+
+.menu .menulist li a:hover{
+  color: white;
+  border-bottom: 3px white solid !important;
+}
+
+.menuBtn{
+  position: absolute;
+  top: 4%;
+  right: 5%;
+  font-size: 2.5rem;
+  display:none !important;
+  color: black;
+}
+
+.menuBtn:hover{
+  font-size: 3rem;
+  transition: .5s;
+}
+
+/* .row2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+.row2 .text{
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buy img:nth-child(1){
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  width: 60%;
+  /* cursor: pointer; */
+}
+
+.buy img:nth-child(2){
+  width: 90%;
+  mix-blend-mode: overlay;
+  z-index: 0;
+}
+
+.imageBox{
+  display:flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding-left:20%;
+   padding-right:15%; */
+}
+
+ .stripes{
+  position: absolute;
+  bottom:-8%;
+  right: -1%;
+  width: 62%;
+  mix-blend-mode:overlay ;
+}
+
+ .night{
+  position: absolute;
+  width: 55%;
+  bottom:0;
+  right: 7%;
+}
+
+.angle{
+  width: 94%;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  /* padding-left: 1%;
+  padding-right: 15%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.angle a{
+  color: black;
+  font-size: 3rem;
+  opacity: .1;
+}
+
+.angle a:hover{
+  opacity: 1;
+  transition: .5s;
+  font-size: 4rem;
+}
+
+.social-links{
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
+
+.social-links a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  /* font-size: 25px !important; */
+  /* margin-top: 5%; */
+}
+
+.social-links a:hover{
+  color: #fff;
+}
+
+.social-links a .fab{
+  margin-top: .3rem;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1000px){
+  .menulist li{
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  .row2 .text{
+    width: 45%;
+    top:25%;
+  }
+
+  .night{
+    width: 60%;
+    right: 5%;
+  }
+}
+
+
+@media only screen and (max-width: 500px){
+
+  .navbar h3{
+    font-size: 1.5rem;
+    margin-top: 5%;
+  }
+
+  .menuBtn{
+    font-size: 2rem;
+    right: 10%;
+    display: block !important;
+  }
+
+
+  .menu ul{
+    /* text-align: center; */
+    position: absolute;
+    width: 40%;
+    top: 12%;
+    right: -40%;
+    z-index:1;
+    background: #fff;
+
+    /* right: 0%;
+    opacity:0; */
+  }
+
+  .menulist{
+    /* overflow: hidden; */
+    transition:.4s;
+    /* max-height: 0 !important; */
+  }
+
+  .menulist li{
+    margin: .5rem;
+    display: block;
+    padding-top: 5%;
+    font-size: 1rem;
+    /* width: 15%; */
+  }
+
+
+  .menu .menulist li a:hover{
+    color: unset;
+    border-bottom: 3px orange solid !important;
+  }
+
+  .row2 .text{
+  left: 28%;
+  top: 25%;
+  width: 55%;
+  }
+
+  .night{
+    width: 75%;
+    right: 10%;
+  }
+
+  .stripes{
+    right: 0%;
+    width: 95%;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 450px){
+  .night{
+    width: 90% !important;
+    right: 5% !important; 
+  }
+
+  .stripes{
+    width: 120%;
+    /* right: -5%; */
+  }
+}
