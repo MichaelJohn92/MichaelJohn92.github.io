@@ -1,0 +1,209 @@
+*{
+    transition: .5s;
+    /* overflow-x: hidden; */
+}
+
+body{
+    min-height: 100vh;
+}
+
+span{
+    color:#66ff00;
+  }
+
+.logo{
+    width: 12%;
+}
+
+.btn:hover{
+    letter-spacing: .5px;
+}
+
+.banner {
+    background-image: url('./images/abackground.png');
+    background-size: cover;
+    background-repeat: round;
+    height:100vh;
+}
+
+.fas.fa-bars{
+    color: white !important;
+}
+
+/* .navbar-toggler, .navbar-toggler-icon{
+    color: #fff;
+} */
+
+.home-text h1, .home-text h5{
+    color:white;
+    /* font-size: 2rem; */
+  }
+
+  .home-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .home-text .btn{
+    background: linear-gradient(to top right, #66ff00, #ffff00);
+    /* color:green; */
+    border-radius: 15px 15px;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .home-text .btn:hover{
+    color: #2a7fff;
+  }
+
+  .fw-bold span{
+    color:#66ff00;
+  }
+
+  .about-text{
+    max-width: 400px;
+  }
+  
+  .about-text .btn{
+    background: linear-gradient(to top right, #66ff00, #ffff00);
+    color:green;
+    border-radius: 15px 15px;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .about-text .btn:hover{
+    color: #2a7fff;
+  }
+
+  .about-text h5{
+      font-size: 1.1rem;
+      font-weight: 600 !important;
+  }
+
+  .skills{
+    background: linear-gradient(to top right, #2a7fff, #00ffcc);
+  }
+
+  .skills .my-skills h1{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  /* .talento{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  } */
+
+  .section-title h1{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+
+  .my-service{
+    background:#d5fff6;
+    border-radius: 15px 15px;
+    height: 100%;
+  }
+  
+  .my-service h3{
+    font-weight: bold;
+  }
+  
+  .section-title h2 .tungaw{
+    color:#66ff00;
+  }
+
+  .portfolio {
+    background: linear-gradient(to top right, #2a7fff, #00ffcc);
+  }
+  
+  .portfolio-item p a{
+    text-decoration: none;
+    color: white;
+  }
+
+  span{
+    color:#66ff00;
+  }
+  
+  .form-control{
+    border: 1px solid #66ff00 ! important;
+  }
+  
+  .buton{
+    background: linear-gradient(to top right, #66ff00, #ffff00);
+    /* border-radius: 15px 15px; */
+    font-weight: bold;
+    border-radius: 20px 20px ! important;
+  }
+
+  .footer{
+    height: 30%;
+    background-image: url('./images/footer.png');
+    background-size: cover;
+    background-repeat: round;
+  
+  }
+  
+  .footer-text{
+    margin-top:12rem ! important;
+    font-size: .9rem;
+  }
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 700px){
+    .banner{
+      background-image: url('./images/abackground360.png');
+    }
+
+    /* .navbar-nav{
+        float: right;
+        background: green;
+    } */
+  
+    .about-text{
+      text-align: center;
+    }
+  }
+
+
+
+
+
+  @media only screen and (max-width: 500px){
+      .logo{
+          width: 18%;
+      }
+
+      .nav-link{
+          font-size: 1rem !important;
+      }
+
+      .home-text{
+        padding: 1.5rem;
+      }
+
+      .home-text h1{
+          font-size: 2.5rem;
+      }
+
+      .home-text h5{
+          font-size: 1.1rem;
+      }
+
+      .home-text .btn{
+          font-size: .8rem;
+      }
+
+  }
+  
