@@ -53,6 +53,7 @@ const hideScrollElement = (element) => {
 
 
 
+
 window.addEventListener("scroll", () => { 
   // handleScrollAnimation();
   scrollElements.forEach((el) => {
