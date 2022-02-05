@@ -13,6 +13,10 @@
         background: linear-gradient(to top right, #2a7fff, #00ffcc);
       }
 
+      .bg-info1{
+        background: linear-gradient(to top right, #2a7fff, #00ffcc);
+      }
+
      .navbar-nav .nav-item .nav-link{
         color: white !important;
         font-size: 1.2rem;
@@ -36,81 +40,7 @@
 
 
 
-      .js-scroll {
-    opacity: 0;
-    /* transition: opacity 500ms; */
-  }
-  
-  .js-scroll.scrolled {
-    opacity: 1 !important;
-  }
-  
-  .scrolled.fade-in {
-    animation: fade-in 1s ease-in-out both !important;
-  }
-  
-  .scrolled.fade-in-bottom {
-    animation: fade-in-bottom 1s ease-in-out both !important;
-  }
-  
-  .scrolled.slide-left {
-    animation: slide-in-left 1s ease-in-out both !important;
-  }
-  
-  .scrolled.slide-right {
-    animation: slide-in-right 1s ease-in-out both !important;
-  }
-
-
-
-  @keyframes slide-in-left {
-  0% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-  
-  @keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(100px);
-      transform: translateX(100px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade-in-bottom {
-    0% {
-      -webkit-transform: translateY(50px);
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
+ 
 
 
 
@@ -319,33 +249,33 @@
 
           <div class="row text-center">
 
-            <div class="col-md-6 mb-1">
+            <div class="col-md-3 col-sm-6 mb-1">
               <div class="portfolio-item">
-                <img src="./images/bpmock2.jpg" class="w-50 img-thumbnail js-scroll slide-left" alt="blackpink lightstick website">
+                <img src="./images/bpmock2.jpg" class="w-100 img-thumbnail js-scroll slide-left" alt="blackpink lightstick website">
                 <h3 class="text-capitalize text-white fs-5 my-2">BlackPink Themed Site</h3>
                 <p><a href="https://michaeljohn92.github.io/blackpink-lightstick/" target="_blank" rel="noopener noreferrer"><span>Live Demo</span></a></p>
               </div>
             </div>
 
-            <div class="col-md-6 mb-1">
+            <div class="col-md-3 col-sm-6 mb-1">
               <div class="portfolio-item">
-                <img src="./images/2novell.jpg" class="w-50 img-thumbnail js-scroll slide-right" alt="night lovell inspired website">
+                <img src="./images/2novell.jpg" class="w-100 img-thumbnail js-scroll slide-right" alt="night lovell inspired website">
                 <h3 class="text-capitalize text-white fs-5 my-2">Night Lovell Landing Page</h3>
                 <p><a href="https://michaeljohn92.github.io/nightLovell/" target="_blank" rel="noopener noreferrer"><span>Live Demo</span></a></p>
               </div>
             </div>
 
-            <div class="col-md-6 mb-1">
+            <div class="col-md-3 col-sm-6 mb-1">
                 <div class="portfolio-item">
-                  <img src="./images/resto.jpg" class="w-50 img-thumbnail js-scroll slide-left" alt="restaurant concept website">
+                  <img src="./images/resto.jpg" class="w-100 img-thumbnail js-scroll slide-left" alt="restaurant concept website">
                   <h3 class="text-capitalize text-white fs-5 my-2">Restaurant Site</h3>
                   <p><a href="https://michaeljohn92.github.io/restoConcept/" target="_blank" rel="noopener noreferrer"><span>Live Demo</span></a></p>
                 </div>
               </div>
 
-              <div class="col-md-6 mb-1">
+              <div class="col-md-3 col-sm-6 mb-1">
                 <div class="portfolio-item">
-                  <img src="./images/narutoF.jpg" class="w-50 img-thumbnail js-scroll slide-right" alt="naruto inspired website">
+                  <img src="./images/narutoF.jpg" class="w-100 img-thumbnail js-scroll slide-right" alt="naruto inspired website">
                   <h3 class="text-capitalize text-white fs-5 my-2">Naruto Inspired Site</h3>
                   <p><a href="https://michaeljohn92.github.io/naruto2/" target="_blank" rel="noopener noreferrer"><span>Live Demo</span></a></p>
                 </div>
@@ -374,10 +304,16 @@
               </div>
 
 
-              <div class="row d-flex justify-content-center">
+              <div class="hay row d-flex justify-content-center">
+                <img src="./images/CONTACTRECT.png" alt="">
                 <div class="contact-form col-md-12 w-75">
-                  <form class="js-scroll fade-in-bottom" action="https://formsubmit.co/magistradoako@gmail.com" method="POST">
-      
+                  <form class="js-scroll fade-in" action="https://formsubmit.co/cf7040c5849e8d8585e11d0bc277e93c" method="POST">
+                    <!-- HONEYPOT WOOT WOOT -->
+                    <input type="text" name="_honey" style="display:none;">
+                    <!-- DISABLE CAPTCHA -->
+                    <input type="hidden" name="_captcha" value="false">
+
+
                     <div class="row">
                       <div class="col-md-6 mb-4">
                         <input type="text" name="fullName" placeholder="Your Name" class="form-control bugok form-control-lg fs-6 border-1 shadow-sm">

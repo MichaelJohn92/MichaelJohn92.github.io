@@ -3,10 +3,10 @@ var menu = document.querySelector('.navbar-toggler')
 
 
 menu.onclick = x => {
-    if(!nav.classList.contains('bg-info')){
-        nav.classList.add('bg-info');
-    } else if(nav.classList.contains('bg-info') && window.pageYOffset <= 390){
-        nav.classList.remove('bg-info');
+    if(!nav.classList.contains('bg-info1')){
+        nav.classList.add('bg-info1');
+    } else if(nav.classList.contains('bg-info1')){
+        nav.classList.remove('bg-info1');
     }
 }
 
@@ -35,7 +35,6 @@ const elementInView = (el, dividend = 1) => {
 };
 
 
-
 const elementOutofView = (el) => {
   const elementTop = el.getBoundingClientRect().top;
   return (
@@ -54,6 +53,7 @@ const hideScrollElement = (element) => {
 
 
 
+
 window.addEventListener("scroll", () => { 
   // handleScrollAnimation();
   scrollElements.forEach((el) => {
@@ -64,3 +64,4 @@ window.addEventListener("scroll", () => {
     }
   })
 });
+
