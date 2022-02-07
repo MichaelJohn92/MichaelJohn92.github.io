@@ -65,3 +65,19 @@ window.addEventListener("scroll", () => {
   })
 });
 
+
+
+
+
+var btt = document.getElementById('download');
+window.addEventListener('scroll', function(event){
+
+  btt.className = (window.pageYOffset > 50) ? "visible" : "";
+
+  // if(window.pageYOffset> 50){
+  //   btt.classList.add('visible');
+  // }else{
+  //   btt.classList.remove('visible');
+  // }
+
+})
