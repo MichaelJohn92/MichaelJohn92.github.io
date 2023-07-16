@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap1/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' /> -->
+    <!-- sa mapbox to ^^^^^^^ -->
+
+    <style>
+        .bg-kulay{
+            background: #022989 !important;
+            height: 50px;
+            color: #fff;
+        }
+
+        .bg-info1{
+            background-color: #fff !important;
+        }
+    </style>
+    <title>Thurston Software Solutions, Inc</title>
+</head>
+<body>
+
+    <!-- 1st nav -->
+    <nav class="bg-kulay py-2 fixed-top">
+        <div class="row d-flex justify-content-center align-items-center py-1">
+            <div class="col-sm-4 d-sm-block d-none offset-sm-2 offset-0 date"></div>
+            <div class="col-sm-5 offset-sm-1">
+
+                <div class="row pt-2">
+                <div class="col-sm-5 offset-sm-0 col-6 offset-0"><!-- lalagyan nung notif-->
+                    <ul>
+                        <li><a href="#"><img src="./Images/notif.png"><span class="d-lg-inline d-none"> Notification</span></a></li>
+                        <li><a href="#"><img src="./Images/email.png"><span class="d-lg-inline d-none"> Inquiry</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-7 offset-sm-0 col-4 offset-2 col-sam"><!--lalagyan nung login form-->
+                    <a href="#">Sign Up </a> | <a href="#"> Login</a>
+                </div>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-sm w-100 bg-white navbar-dark py-3"><!--navbar-expand-lg --><!--may fixed-top yung class neto -->
+        <div class="container w-100">
+            <a href="#" class="navbar-brand offset-sm-2"><img src="./Images/WedDesign.png" class="w-75" alt="thurston logo" ></a>
+
+            <button class="navbar-toggler" type='button' data-bs-toggle='collapse' data-bs-target='#navmenu'>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse w-100" id='navmenu'>
+                <ul class="navbar-nav ms-auto"><!--ms auto puts the ul to the right-->
+
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- END OF TWO NAVIGATIONS -->
+
+
+
+    <!-- START OF CAROUSEL -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 0"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item c-item1 active">
+            <img src="./Images/1.jpg" class="" alt="...">
+          </div>
+          <div class="carousel-item c-item2">
+            <img src="./Images/2.jpg" class="" alt="...">
+          </div>
+          <div class="carousel-item c-item3">
+            <img src="./Images/3.jpg" class="" alt="...">
+          </div>
+          <div class="carousel-item c-item4">
+            <img src="./Images/4.jpg" class="" alt="...">
+          </div>
+        </div>
+
+        <div class="showcase" id="home">
+            <h1>WE PROVIDE PROPER <span>IT SOLUTIONS</span></h1>
+          <p>OPTIMIZE SYSTEMS USING OUR YEARS OF EXPERIENCE</p>
+           <a href="#" class="btn">Read More</a>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+
+
+      <!-- THURSTON SERVICES -->
+
+      <section class="services py-5 text-align-center" id="services">
+        <div class="container-lg py-4">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title text-center">
+                    <h1 class="fw-bold fs-1">Thurston Services</h1>
+                    <hr class="offset-5" size="4" width="20%" color="lightskyblue">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mga-elemento mt-5">
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/insurance.png" alt="" srcset="">
+                    <h3 class="mb-3">Insurance Systems</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/management.png" alt="" srcset="">
+                    <h3 class="mb-3">Management Systems</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/medical.png" alt="" srcset="">
+                    <h3 class="mb-3">Medical Billing</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/ecommerce.png" alt="" srcset="">
+                    <h3 class="mb-3">E-commerce</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/3d.png" alt="" srcset="">
+                    <h3 class="mb-3">3D Animations</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/wd.png" alt="" srcset="">
+                    <h3 class="mb-3">Website Design</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/accounting.png" alt="" srcset="">
+                    <h3 class="mb-3">Accounting Systems</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/support.png" alt="" srcset="">
+                    <h3 class="mb-3">Support</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+                <div class="col-sm-4 box-elements">
+                    <img class="mb-3" src="./Images/64/cloud.png" alt="" srcset="">
+                    <h3 class="mb-3">Cloud Service</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae error illum doloremque esse magnam libero! Hic magni quasi laboriosam.</p>
+                </div>
+
+            
+              </div>
+
+
+
+              <!-- OUR TEAM -->
+
+
+
+              
+              
+              
+              
+            </div>
+        </section>
+        
+        
+        
+        <section class="team py-5" id="team">
+            <div class="container-log py-4 team-2">
+
+              <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="section-title text-center">
+                      <h1 class="fw-bold mt-5 mb-5">Our Team</h1>
+                    </div>
+                  </div>
+             </div>
+
+
+            <div class="row text-center container-ng-pictures">
+
+
+                    <div class="col-lg-2 col-md-1 col-1"></div>
+
+                    <div class="col-lg-2 col-5">
+                        <div class="team-item">
+                          <img src="./Images/user.jpg" class="w-sm-100 img-thumbnail mb-4" alt="team item">
+                          <h2 class="text-capitalize fs-5 mb-2">Elmer Amore</h2>
+                          <p class="mb-4"><a href="#">Front End Developer</a></p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-2 col-5">
+                        <div class="team-item">
+                          <img src="./Images/user1.jpg" class="w-md-100 img-thumbnail mb-4" alt="team item">
+                          <h2 class="text-capitalize fs-5 mb-2">Lui Nicanor</h2>
+                          <p class="mb-4"><a href="#">Team Leader</a></p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-2 col-5 offset-lg-0 offset-md-1 offset-0">
+                        <div class="team-item">
+                          <img src="./Images/user3.jpg" class="w-md-100 img-thumbnail mb-4" alt="team item">
+                          <h2 class="text-capitalize fs-5 mb-2">Rae Lustre</h2>
+                          <p class="mb-4"><a href="#">Project Manager</a></p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-2 col-5">
+                        <div class="team-item">
+                          <img src="./Images/user2.jpg" class="w-md-100 img-thumbnail mb-4" alt="team item">
+                          <h2 class="text-capitalize fs-5 mb-2">Pau Stark</h2>
+                          <p class="mb-4"><a href="#">Web Developer</a></p>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-2 col-md-1 col-1"></div>
+
+                      <!-- dito -->
+                      
+                </div>
+
+                <div class="row text-center container-ng-pictures2 mb-0">
+                    <div id="carouselExampleIndicators c2" class="carousel slide c2" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          
+                          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                          <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 0"></button>
+
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item ci-2 active">
+                            <img src="./Images/user.jpg" class="w-50" alt="...">
+                            <h2 class="text-capitalize fs-5 mt-5 mb-0">Elmer Amore</h2>
+                          <p class="mt-0"><a href="#">Front End Developer</a></p>
+                          </div>
+                          <div class="carousel-item ci-2">
+                            <img src="./Images/user1.jpg" class="w-50" alt="...">
+                            <h2 class="text-capitalize fs-5 mb-0">Lui Nicanor</h2>
+                          <p class="mt-0"><a href="#">Team Leader</a></p>
+                          </div>
+                          <div class="carousel-item ci-2">
+                            <img src="./Images/user3.jpg" class="w-50" alt="...">
+                            <h2 class="text-capitalize fs-5 mb-0">Rae Lustre</h2>
+                          <p class="mt-0"><a href="#">Project Manager</a></p>
+                          </div>
+                          <div class="carousel-item ci-2">
+                            <img src="./Images/user2.jpg" class="w-50" alt="...">
+                            <h2 class="text-capitalize fs-5 mb-0">Pau Stark</h2>
+                            <p class="mt-0"><a href="#">Web Developer</a></p>
+                          </div>
+                        </div> 
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button> -->
+                       </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT US -->
+
+
+
+        <section class="contact py-5" id="contact">
+            <div class="container-lg py-4 text-muted">
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                      <div class="section-title text-center">
+                        <h1 class="fw-bold mb-5">Contact Us</h1>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="row">
+                  <div class="col-md-6 mt-sm-0 mt-4">
+                      <h3>Get In Touch!</h3>
+                      <h5>For any questions, please fill out all fields.</h5>
+                    <div class="contact-form">
+                     <form action="index.html">
+
+                        <div class="row">
+                         <div class="col-sm-12 mt-3 mb-4">
+                            <input type="text" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                         </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 mb-4">
+                                <input type="text" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 mb-4">
+                                <input type="text" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mb-4">
+                              <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                              <button class="btn px-3" type="submit" name="button">Submit</button>
+                            </div>
+                          </div>
+                    </form>
+
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-6 order-md-0 order-first">
+                    <h3>Thurston Software Solutions, Inc.</h3>
+                    <h5>3rd Flr. Glialcon Bldg., #5 F. Blumentritt, San Juan City</h5>
+                    <!-- <div class="row col-12 w-100"> -->
+                        <div class="mt-4" id='map'></div>
+                    <!-- </div> -->
+                  </div>
+
+            </div>
+
+
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer py-4">
+            <div class ="container-lg">
+                <div class="row">
+                    <div class="col-md-6 col-12 offset-md-0 offset-0 mt-sm-4 mt-4 textto">
+                        &copy; 2017 Thurston Software Solutions, Inc. All Rights Reserved.
+                    </div>
+
+                    <div class="col-md-6 col-12 order-md-0 order-first mt-sm-2 mt-3">
+                        <div class="row text-center">
+                            <div class="col-md-7 col-1">
+
+                            </div>
+                            <div class="col-md-1 col-2">
+                                <img src="./Images/fb.png" alt="">
+                            </div>
+                            <div class="col-md-1 col-2">
+                                <img src="./Images/twitter.png" alt="">
+                            </div>
+                            <div class="col-md-1 col-2">
+                                <img src="./Images/instagram.png" alt="">
+                            </div>
+                            <div class="col-md-1 col-2">
+                                <img src="./Images/linkedin.png" alt="">
+                            </div>
+                            <div class="col-md-1 col-2">
+                                <img src="./Images/g+.png" alt="">
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </footer>
+
+        
+        <!-- <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYmxhc3RvaXNlMTQzIiwiYSI6ImNsMDludWljMzA0Y2UzZG9hMXN6N3pqdHQifQ.EvHaDw2gFoB0Qw-508zZTQ'
+            var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: {lat:14.597380, lon:121.029970}, 
+            zoom: 18,
+            });
+         </script> -->
+
+    <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script> -->
+    <!-- AIzaSyBdbCrHLijxV7UIczbBvcyHigi0AGS5j84 -->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const uluru = { lat: 14.597380, lng: 121.029970};
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 17,
+            center: uluru,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+        }
+      </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdbCrHLijxV7UIczbBvcyHigi0AGS5j84&callback=initMap">
+</script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
